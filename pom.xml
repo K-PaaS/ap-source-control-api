@@ -2,8 +2,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.paasta.scapi</groupId>
-    <artifactId>sourcecontrol-api</artifactId>
+    <groupId>com.scapi</groupId>
+    <artifactId>ap-source-control-api</artifactId>
     <version>0.1</version>
     <packaging>jar</packaging>
     <name>scapi</name>
@@ -23,14 +23,15 @@
         <scm.version>1.54</scm.version>
         <spring.boot.version>1.5.4.RELEASE</spring.boot.version>
         <maven.test.skip>true</maven.test.skip>
-        <final.fileName>sourcecontrol-api</final.fileName>
+        <final.fileName>ap-source-control-api</final.fileName>
         <tomcat.version>8.5.63</tomcat.version>
     </properties>
     <repositories>
         <repository>
             <id>maven.scm-manager.org</id>
             <name>scm-manager release repository</name>
-            <url>http://maven.scm-manager.org/nexus/content/groups/public</url>
+            <!--<url>http://maven.scm-manager.org/nexus/content/repositories/releases/</url>-->
+            <url>https://packages.scm-manager.org/repository/releases/</url>
         </repository>
     </repositories>
     <dependencies>
